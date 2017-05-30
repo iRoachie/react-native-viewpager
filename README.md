@@ -20,7 +20,7 @@ Demo project is [here](./Sample).
 1. Run `npm install react-native-viewpager --save`
 2. Code like this:
 
-```
+```jsx
 var ViewPager = require('react-native-viewpager');
 <ViewPager
     dataSource={this.state.dataSource}
@@ -44,7 +44,7 @@ var ViewPager = require('react-native-viewpager');
 * **`animation`**: function that returns a React Native Animated configuration.
 
 Example:
-```
+```jsx
 var ViewPager = require('react-native-viewpager');
 <ViewPager
     dataSource={this.state.dataSource}
