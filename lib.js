@@ -1,10 +1,5 @@
 var ReactNative = require('react-native');
 
-var {
-  View,
-  ViewPropTypes
-} = ReactNative
-
-var ViewPropTypes = RNViewPropsTypes || View.propTypes;
+var ViewPropTypes = ReactNative.ViewPropTypes || ReactNative.View.propTypes;
 
 module.exports = ViewPropTypes;
