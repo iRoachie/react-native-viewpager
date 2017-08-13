@@ -3,6 +3,7 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 var createReactClass = require('create-react-class'); 
+var ViewPropTypes = require('./lib');
 
 var ReactNative = require('react-native');
 var {
@@ -30,7 +31,7 @@ var ViewPager = createReactClass({
   },
 
   propTypes: {
-    ...View.propTypes,
+    ...ViewPropTypes,
     dataSource: PropTypes.instanceOf(ViewPagerDataSource).isRequired,
     renderPage: PropTypes.func.isRequired,
     onChangePage: PropTypes.func,
